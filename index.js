@@ -60,7 +60,7 @@ readInterface.on("line", function (line) {
       if (!robot) {
         console.log("Robot not initialised");
       } else {
-        robot.move();
+        robot.move(board);
       }
       break;
     }

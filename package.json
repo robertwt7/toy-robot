@@ -2,7 +2,7 @@
   "name": "toy-robot",
   "version": "1.0.0",
   "scripts": {
-    "start": "node --experimental-modules index.js ./tests/Input1.txt",
+    "start": "node --experimental-modules index.js ./tests/input5.txt",
     "test": "jest",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage"

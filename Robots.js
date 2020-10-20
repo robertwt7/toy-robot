@@ -2,8 +2,8 @@ const engine = require("./engine");
 
 module.exports = class Robots {
   constructor(x, y, direction) {
-    this.x = x;
-    this.y = y;
+    this.x = parseInt(x, 10);
+    this.y = parseInt(y, 10);
 
     // Set direction as index
     const dirIndex = engine.directionStr.findIndex(
@@ -14,16 +14,12 @@ module.exports = class Robots {
 
   move = (board) => {
     const dirIndex = this.direction;
-    console.log(engine.directionConst[engine.directionStr[dirIndex]]);
-    if (
-      engine.isValid(
-        board,
-        engine.directionConst[engine.directionStr[dirIndex]]
-      )
-    ) {
-      const [x, y] = engine.directionConst[engine.directionStr[dirIndex]];
-      this.x = x;
-      this.y = y;
+    const dirStr = engine.directionStr[dirIndex];
+    const [x, y] = engine.directionConst[dirStr];
+    const newDir = [this.x + x, this.y + y];
+    if (engine.isValid(board, newDir)) {
+      this.x = newDir[0];
+      this.y = newDir[1];
     } else {
       console.log("Move Invalid");
     }
