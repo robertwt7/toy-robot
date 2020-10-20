@@ -2,7 +2,7 @@
   "name": "toy-robot",
   "version": "1.0.0",
   "scripts": {
-    "start": "node index.js",
+    "start": "node --experimental-modules index.js ./tests/Input1.txt",
     "test": "jest",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage"
@@ -20,6 +20,7 @@
     "eslint-config-prettier": "^6.11.0",
     "eslint-import-resolver-node": "^0.3.4",
     "eslint-plugin-import": "^2.21.2",
+    "eslint-plugin-react": "^7.20.0",
     "eslint-plugin-jsx-a11y": "^6.3.0",
     "eslint-plugin-prettier": "^3.1.4",
     "postcss-flexbugs-fixes": "4.2.1",
