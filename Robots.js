@@ -14,6 +14,7 @@ module.exports = class Robots {
 
   move = (board) => {
     const dirIndex = this.direction;
+    console.log(engine.directionConst[engine.directionStr[dirIndex]]);
     if (
       engine.isValid(
         board,
