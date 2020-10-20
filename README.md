@@ -10,4 +10,9 @@
 ## Instructions:
     1. To run, run `node index.js <path-to-input>`
     2. All of the test files are in tests folders with the extension *.txt
-    3. To run the blackbox testing (diffing), run `./runTest.sh`, this script will compare the expected output (tests/*.out with the tests/*.res)
+
+
+
+## Testing:
+    1. To run the blackbox testing (diffing), run `./runTest.sh`, this script will compare the expected output (tests/*.out with the tests/*.res)
+    2. To run mocha and chai, run `npm run test`
